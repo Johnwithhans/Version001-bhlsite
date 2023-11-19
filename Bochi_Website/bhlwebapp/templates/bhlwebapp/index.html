@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        </div>
+      </div>
       </div>
     </section><!-- End Why Us Section -->
 
@@ -135,7 +135,7 @@
         </div>
 
       </div>
-      
+
     </section><!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
@@ -318,31 +318,34 @@
           </div>
 
           <!-- Dental Clinic -->
-<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-  <div class="icon-box">
-    <div class="icon"><i class="fas fa-tooth"></i></div>
-    <h4><a href="#services">Dental Clinic</a></h4>
-    <p>Our Dental Clinic provides comprehensive dental care and services to ensure your oral health and hygiene.</p>
-  </div>
-</div>
-<!-- Laboratory Services -->
-<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-  <div class="icon-box">
-    <div class="icon"><i class="fas fa-flask"></i></div>
-    <h4><a href="#services">Laboratory Services</a></h4>
-    <p>Our laboratory offers state-of-the-art diagnostic services and tests, ensuring precise and reliable results
-      for comprehensive healthcare.</p>
-  </div>
-</div>
-<!-- Cardiology Department -->
-<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-  <div class="icon-box">
-    <div class="icon"><i class="fas fa-heartbeat"></i></div>
-    <h4><a href="#services">Cardiology Department</a></h4>
-    <p>Our Cardiology Department is dedicated to heart health, offering advanced diagnostic services and specialized
-      treatments for cardiovascular conditions, ensuring your heart is in caring hands.</p>
-  </div>
-</div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-tooth"></i></div>
+              <h4><a href="#services">Dental Clinic</a></h4>
+              <p>Our Dental Clinic provides comprehensive dental care and services to ensure your oral health and
+                hygiene.</p>
+            </div>
+          </div>
+          <!-- Laboratory Services -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-flask"></i></div>
+              <h4><a href="#services">Laboratory Services</a></h4>
+              <p>Our laboratory offers state-of-the-art diagnostic services and tests, ensuring precise and reliable
+                results
+                for comprehensive healthcare.</p>
+            </div>
+          </div>
+          <!-- Cardiology Department -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4><a href="#services">Cardiology Department</a></h4>
+              <p>Our Cardiology Department is dedicated to heart health, offering advanced diagnostic services and
+                specialized
+                treatments for cardiovascular conditions, ensuring your heart is in caring hands.</p>
+            </div>
+          </div>
 
 
 
@@ -381,9 +384,10 @@
             </div>
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
-                data-rule="minlen:4" required autocomplete="on">
-
-            </div>
+                  pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number"
+                  data-rule="minlen:4" required autocomplete="on">
+          </div>
+          
           </div>
           <div class="row">
             <div class="col-md-4 form-group mt-3">
@@ -397,6 +401,16 @@
                 <option value="Cardiology Department">Cardiology Department</option>
                 <option value="Pediatrics Department">Pediatrics Department</option>
                 <option value="Radiology Department">Radiology Department</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Ophthalmology Clinic">Ophthalmology Clinic</option>
+                <option value="ENT Clinic">ENT Clinic</option>
+                <option value="Physiotherapy">Physiotherapy</option>
+                <option value="ICU">ICU</option>
+                <option value="Neonatal ICU">Neonatal ICU</option>
+                <option value="Medical Clinic">Medical Clinic</option>
+                <option value="General OPD">General OPD</option>
+                <option value="CTC & TB Clinic">CTC & TB Clinic</option>
+                <option value="Dental Clinic">Dental Clinic</option>
                 <option value="Not Sure">I am not Sure</option>
                 <option value="Not Sure">Other</option>
               </select>
@@ -590,11 +604,13 @@
                 </div>
                 {% endfor %}
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev" style="color: black;">
+              <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev"
+                style="color: black;">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next" style="color: black;">
+              <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next"
+                style="color: black;">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -624,7 +640,8 @@
                 data-bs-target="#faq-list-1">What sets Bochi Hospital apart from other healthcare providers? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p class="fs-6">At Bochi Hospital, our commitment to excellence, state-of-the-art facilities, and compassionate care
+                <p class="fs-6">At Bochi Hospital, our commitment to excellence, state-of-the-art facilities, and
+                  compassionate care
                   make us a preferred healthcare choice. We tailor our services to your unique needs, ensuring the best
                   possible healthcare experience.</p>
               </div>
@@ -635,7 +652,8 @@
                 class="collapsed">What should I bring to my first appointment at Bochi Hospital? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p class="fs-6">For your first appointment, please bring your ID, health insurance card, and a list of any
+                <p class="fs-6">For your first appointment, please bring your ID, health insurance card, and a list of
+                  any
                   medications you're currently taking. Our team will guide you through the rest of the process.</p>
               </div>
             </li>
@@ -645,7 +663,8 @@
                 class="collapsed">What steps are taken to ensure patient privacy and data security at Bochi Hospital? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class collapse data-bs-parent=".faq-list">
-                <p class="fs-6">Bochi Hospital prioritizes patient privacy and data security. We follow strict protocols and use
+                <p class="fs-6">Bochi Hospital prioritizes patient privacy and data security. We follow strict protocols
+                  and use
                   advanced technology to protect your personal information and ensure confidentiality at all times.</p>
               </div>
             </li>
@@ -655,7 +674,8 @@
                 class="collapsed">How can I provide feedback or suggestions for improvement to Bochi Hospital? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p class="fs-6">We value your feedback. You can share your thoughts and suggestions through our online feedback form
+                <p class="fs-6">We value your feedback. You can share your thoughts and suggestions through our online
+                  feedback form
                   or by speaking with our friendly staff. Your input helps us continually enhance our services.</p>
               </div>
             </li>
@@ -665,7 +685,8 @@
                 class="collapsed">What are the working hours of Bochi Hospital? <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p class="fs-6">Bochi Hospital is dedicated to your health around the clock. We are open 24 hours a day, seven days a
+                <p class="fs-6">Bochi Hospital is dedicated to your health around the clock. We are open 24 hours a day,
+                  seven days a
                   week, from Monday to Sunday. Our team is ready to provide you with exceptional care whenever you need
                   it.</p>
               </div>
