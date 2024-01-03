@@ -4,7 +4,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
 from django.utils import timezone
-from .models import Event
+from .models import Event, GalleryImage
 import base64
 import os
 import secrets  # For generating random nonces
@@ -14,9 +14,18 @@ import datetime
 
 def index_view(request):
     nonce = secrets.token_urlsafe(16)
-    events = Event.objects.all()  # Retrieve all Event objects
+    
+    # Retrieve all Event objects
+    events = Event.objects.all()
+    
+    # Retrieve all GalleryImage objects
+    gallery_images = GalleryImage.objects.all()
+    
     current_year = datetime.datetime.now().year
-    return render(request, 'bhlwebapp/index.html', {'events': events, 'nonce': nonce, 'current_year': current_year})
+    
+    return render(request, 'bhlwebapp/index.html', {'events': events, 'nonce': nonce, 'current_year': current_year, 'gallery_images': gallery_images})
+
+
 
 def make_appointment(request):
     if request.method == 'POST':
